@@ -6,13 +6,20 @@ export class Game extends Scene
   background: Phaser.GameObjects.Image;
   msg_text : Phaser.GameObjects.Text;
 
-  constructor ()
-  {
+  player: Phaser.Physics.Matter.Sprite;
+  inputKeys: any;
+
+  constructor() {
     super('Game');
   }
 
-  create ()
-  {
+  preload() {
+    console.log('Game: preload.');
+  }
+
+  create() {
+    console.log('Game: create.');
+
     this.camera = this.cameras.main;
     this.camera.setBackgroundColor(0x00ff00);
 
@@ -33,8 +40,38 @@ export class Game extends Scene
     );
     this.msg_text.setOrigin(0.5);
 
-    this.input.once('pointerdown', () => {
-      this.scene.start('GameOver');
+    this.inputKeys = this.input.keyboard.addKeys({
+      up:    Phaser.Input.Keyboard.KeyCodes.W,
+      down:  Phaser.Input.Keyboard.KeyCodes.S,
+      left:  Phaser.Input.Keyboard.KeyCodes.A,
+      right: Phaser.Input.Keyboard.KeyCodes.D,
     });
+    console.log(this.inputKeys);
+
+    this.player = this.matter.add.sprite(0, 0, "player");
+  }
+
+  update() {
+    const speed = 2.5;
+    let playerVelocity = new Phaser.Math.Vector2();
+
+    if (this.inputKeys.left.isDown) {
+      playerVelocity.x = -1;
+    } else if (this.inputKeys.right.isDown) {
+      playerVelocity.x = 1;
+    } else {
+      playerVelocity.x = 0;
+    }
+
+    if (this.inputKeys.up.isDown) {
+      playerVelocity.y = -1;
+    } else if (this.inputKeys.down.isDown) {
+      playerVelocity.y = 1;
+    } else {
+      playerVelocity.y = 0;
+    }
+    playerVelocity.normalize();
+    playerVelocity.scale(speed);
+    this.player.setVelocity(playerVelocity.x, playerVelocity.y);
   }
 }

@@ -12,7 +12,8 @@
   "author": "demitas",
   "license": "MIT",
   "dependencies": {
-    "phaser": "^3.80.1"
+    "phaser": "^3.80.1",
+    "phaser-matter-collision-plugin": "^1.0.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",

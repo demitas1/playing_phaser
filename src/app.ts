@@ -1,22 +1,31 @@
 import * as Phaser from 'phaser';
-import { GameScene } from './gamescene';
+
+import { Boot } from './scenes/Boot';
+import { Preloader } from './scenes/Preloader';
+import { MainMenu } from './scenes/MainMenu';
+import { Game as MainGame } from './scenes/Game';
+import { GameOver } from './scenes/GameOver';
+
 
 const config: Phaser.Types.Core.GameConfig = {
   title: 'Empty',
 
-  scene: [GameScene],
-  backgroundColor: '#333',
+  type: Phaser.AUTO,
+  parent: 'game-container',
+  backgroundColor: '#080f0f',
+  width: 1024,
+  height: 768,
   scale: {
     mode: Phaser.Scale.FIT,
-    parent: 'game-container',
-    autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
-    width: 800,
-    height: 600,
-    max: {
-      width: 800,
-      height: 600
-    }
-  }
+    autoCenter: Phaser.Scale.CENTER_BOTH
+  },
+  scene: [
+    Boot,
+    Preloader,
+    MainMenu,
+    MainGame,
+    GameOver,
+  ],
 };
 
 // main

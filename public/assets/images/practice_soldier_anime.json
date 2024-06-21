@@ -1,0 +1,16 @@
+{
+    "anims": [
+        {
+            "key": "idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 2.0,
+            "frames": [
+                { "key": "player_atlas", "frame": "f1" },
+                { "key": "player_atlas", "frame": "f2" },
+                { "key": "player_atlas", "frame": "f3" },
+                { "key": "player_atlas", "frame": "f4" }
+            ]
+        }
+    ]
+}

@@ -26,9 +26,13 @@ export class Game extends Scene
   preload() {
     console.log('Game: preload.');
     this.load.atlas(
-      'player',
+      'player_atlas',
       'assets/images/practice_soldier-f01_no_gun-32x32.png',
       'assets/images/practice_soldier.json'
+    );
+    this.load.animation(
+      'player_anime',
+      'assets/images/practice_soldier_anime.json'
     );
   }
 
@@ -49,11 +53,13 @@ export class Game extends Scene
     }) as InputKeys;
     console.log(this.inputKeys);
 
-    this.player = this.matter.add.sprite(0, 0, "player", 'f1');
+    this.player = this.matter.add.sprite(0, 0, "player_atlas", 'f5');
     this.add.existing(this.player);
   }
 
   update() {
+    this.player.anims.play('idle', true);
+
     const speed = 2.5;
     let playerVelocity = new Phaser.Math.Vector2();
 

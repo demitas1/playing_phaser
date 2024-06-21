@@ -1,5 +1,15 @@
 import { Scene } from 'phaser';
 
+
+// Define an interface for custom keys
+interface InputKeys {
+  up: Phaser.Input.Keyboard.Key;
+  down: Phaser.Input.Keyboard.Key;
+  left: Phaser.Input.Keyboard.Key;
+  right: Phaser.Input.Keyboard.Key;
+}
+
+
 export class Game extends Scene
 {
   camera: Phaser.Cameras.Scene2D.Camera;
@@ -7,7 +17,7 @@ export class Game extends Scene
   msg_text : Phaser.GameObjects.Text;
 
   player: Phaser.Physics.Matter.Sprite;
-  inputKeys: any;
+  inputKeys: InputKeys;
 
   constructor() {
     super('Game');
@@ -15,6 +25,11 @@ export class Game extends Scene
 
   preload() {
     console.log('Game: preload.');
+    this.load.atlas(
+      'player',
+      'assets/images/practice_soldier-f01_no_gun-32x32.png',
+      'assets/images/practice_soldier.json'
+    );
   }
 
   create() {
@@ -26,29 +41,16 @@ export class Game extends Scene
     this.background = this.add.image(512, 384, 'background');
     this.background.setAlpha(0.5);
 
-    this.msg_text = this.add.text(
-      512, 384,
-      'Make something fun!\nand share it with us:\nsupport@phaser.io',
-      {
-        fontFamily: 'Arial Black',
-        fontSize: 38,
-        color: '#ffffff',
-        stroke: '#000000',
-        strokeThickness: 8,
-        align: 'center'
-      }
-    );
-    this.msg_text.setOrigin(0.5);
-
     this.inputKeys = this.input.keyboard.addKeys({
       up:    Phaser.Input.Keyboard.KeyCodes.W,
       down:  Phaser.Input.Keyboard.KeyCodes.S,
       left:  Phaser.Input.Keyboard.KeyCodes.A,
       right: Phaser.Input.Keyboard.KeyCodes.D,
-    });
+    }) as InputKeys;
     console.log(this.inputKeys);
 
-    this.player = this.matter.add.sprite(0, 0, "player");
+    this.player = this.matter.add.sprite(0, 0, "player", 'f1');
+    this.add.existing(this.player);
   }
 
   update() {

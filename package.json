@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --open",
+    "start": "webpack serve --open-app-name 'brave-browser'",
+    "start2": "webpack serve --open-app-name 'firefox'",
+    "start3": "webpack serve --open-app-name 'google-chrome'",
     "build": "webpack"
   },
   "author": "demitas",
   "license": "MIT",
   "dependencies": {
-    "phaser": "^3.60.0"
+    "phaser": "^3.80.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",

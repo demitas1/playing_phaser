@@ -1,4 +1,5 @@
 import { Scene } from 'phaser';
+import Player from '../Player';
 
 
 // Define an interface for custom keys
@@ -10,11 +11,10 @@ interface InputKeys {
 }
 
 
-export class Game extends Scene
+export default class Game extends Scene
 {
   camera: Phaser.Cameras.Scene2D.Camera;
   background: Phaser.GameObjects.Image;
-  msg_text : Phaser.GameObjects.Text;
 
   player: Phaser.Physics.Matter.Sprite;
   inputKeys: InputKeys;
@@ -25,15 +25,7 @@ export class Game extends Scene
 
   preload() {
     console.log('Game: preload.');
-    this.load.atlas(
-      'player_atlas',
-      'assets/images/practice_soldier-f01_no_gun-32x32.png',
-      'assets/images/practice_soldier.json'
-    );
-    this.load.animation(
-      'player_anime',
-      'assets/images/practice_soldier_anime.json'
-    );
+    Player.preload(this);
   }
 
   create() {
@@ -53,33 +45,16 @@ export class Game extends Scene
     }) as InputKeys;
     console.log(this.inputKeys);
 
-    this.player = this.matter.add.sprite(0, 0, "player_atlas", 'f5');
+    this.player = new Player({
+      scene: this,
+      x: 160,
+      y: 80,
+      texture: 'player_atlas',
+      frame: 'f5'});
     this.add.existing(this.player);
   }
 
   update() {
-    this.player.anims.play('idle', true);
-
-    const speed = 2.5;
-    let playerVelocity = new Phaser.Math.Vector2();
-
-    if (this.inputKeys.left.isDown) {
-      playerVelocity.x = -1;
-    } else if (this.inputKeys.right.isDown) {
-      playerVelocity.x = 1;
-    } else {
-      playerVelocity.x = 0;
-    }
-
-    if (this.inputKeys.up.isDown) {
-      playerVelocity.y = -1;
-    } else if (this.inputKeys.down.isDown) {
-      playerVelocity.y = 1;
-    } else {
-      playerVelocity.y = 0;
-    }
-    playerVelocity.normalize();
-    playerVelocity.scale(speed);
-    this.player.setVelocity(playerVelocity.x, playerVelocity.y);
+    this.player.update();
   }
 }

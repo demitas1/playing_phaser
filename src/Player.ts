@@ -57,6 +57,7 @@ export default class Player extends Phaser.Physics.Matter.Sprite
     this.setExistingBody(matterCompound);
     this.setFixedRotation();
     this.setStatic(true);  // to prevent applying force
+
   }
 
   static preload(scene: Phaser.Scene) {

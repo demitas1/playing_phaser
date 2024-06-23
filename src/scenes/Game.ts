@@ -16,7 +16,7 @@ export default class Game extends Scene
   camera: Phaser.Cameras.Scene2D.Camera;
   background: Phaser.GameObjects.Image;
 
-  player: Phaser.Physics.Matter.Sprite;
+  player: Player;
   inputKeys: InputKeys;
 
   constructor() {
@@ -60,17 +60,6 @@ export default class Game extends Scene
       tileset,
       0, 0);
 
-    // test matter for map
-    const matterBlock = this.matter.add.circle(
-      200,
-      200,
-      40,
-      {
-        isSensor: false,
-        label: 'block',
-        isStatic: true,
-      }
-    );
 
     // input
     this.inputKeys = this.input.keyboard.addKeys({
@@ -89,6 +78,33 @@ export default class Game extends Scene
       texture: 'player_atlas',
       frame: 'f5'});
     this.add.existing(this.player);
+
+
+    // test matter for map
+    //console.log(this.matterCollision);
+    const matterBlock = this.matter.add.rectangle(
+      200, 200,
+      100, 50,
+      {
+        isSensor: false,
+        label: 'block',
+        isStatic: true,
+      }
+    );
+
+    // matter collistion test
+    this.matterCollision.addOnCollideStart({
+      objectA: this.player,
+      objectB: matterBlock,
+      callback: eventData => {
+        const { bodyA, bodyB } = eventData;
+        console.log("Player touched something.");
+          // bodyB will be the matter body that the player touched.
+          // gameObjectB will be the game object that owns bodyB, or undefined if there's no game object
+          // (e.g. the player hitting an invisible Matter body acting as a wall).
+        this.player.onCollision();
+      }
+    });
   }
 
   update() {

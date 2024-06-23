@@ -8,6 +8,27 @@ import Game from './scenes/Game';
 import { GameOver } from './scenes/GameOver';
 
 
+const pluginConfig = {
+  // The plugin class:
+  plugin: PhaserMatterCollisionPlugin,
+  // Where to store in Scene.Systems, e.g. scene.sys.matterCollision:
+  key: "matterCollision" as "matterCollision",
+  // Where to store in the Scene, e.g. scene.matterCollision:
+  mapping: "matterCollision" as "matterCollision",
+};
+
+declare module "phaser" {
+  interface Scene {
+    [pluginConfig.mapping]: PhaserMatterCollisionPlugin;
+  }
+  namespace Scenes {
+    interface Systems {
+      [pluginConfig.key]: PhaserMatterCollisionPlugin;
+    }
+  }
+}
+
+
 const config: Phaser.Types.Core.GameConfig = {
   title: 'Empty',
 
@@ -30,13 +51,7 @@ const config: Phaser.Types.Core.GameConfig = {
     }
   },
   plugins: {
-    scene: [
-      {
-        plugin: PhaserMatterCollisionPlugin,
-        key: 'matterCollision',
-        mapping: 'matterCollision',
-      }
-    ]
+    scene: [pluginConfig],
   },
   scene: [
     Boot,

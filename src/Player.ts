@@ -17,47 +17,28 @@ export default class Player extends Phaser.Physics.Matter.Sprite
   game: Game;
 
   constructor(data: SpriteData) {
+    const bodyOptions = {
+      restitution: 0,
+      friction: 0,
+      shape: {
+        type: "circle",
+        radius: 10,
+      },
+      label: 'player',
+      isStatic: false,
+    };
+
     super(
       data.scene.matter.world,
       data.x,
       data.y,
       data.texture,
-      data.frame);
+      data.frame,
+      bodyOptions
+    );
 
     this.game = data.scene;
     this.game.add.existing(this);
-
-    // Collision
-    const _matter = this.game.matter;
-    const matterCollision = _matter.add.circle(
-      this.x,
-      this.y,
-      12,
-      {
-        isSensor: false,
-        label: 'playerCollsion',
-      }
-    );
-    const matterSensor = _matter.add.circle(
-      this.x,
-      this.y,
-      16,
-      {
-        isSensor: true,
-        label: 'playerSensor',
-      }
-    );
-    const matterCompound = _matter.body.create({
-        parts: [
-          matterCollision,
-          matterSensor,
-          ],
-        inertia: Infinity  // prevent rotation
-    });
-    this.setExistingBody(matterCompound);
-    this.setFixedRotation();
-    this.setStatic(true);  // to prevent applying force
-
   }
 
   static preload(scene: Phaser.Scene) {
@@ -109,5 +90,9 @@ export default class Player extends Phaser.Physics.Matter.Sprite
     } else {
       this.anims.play('idle', true);
     }
+  }
+
+  onCollision() {
+    console.log('player detects collision.');
   }
 }

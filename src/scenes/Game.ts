@@ -75,8 +75,8 @@ export default class Game extends Scene
       scene: this,
       x: 160,
       y: 80,
-      texture: 'player_atlas',
-      frame: 'f5'});
+      texture: 'soldier-f01-nogun',  // Player: load.atlas で設定したkey
+      frame: 'practice_soldier-f01_no_gun-32x32_0'});  // texture 内のフレーム名
     this.add.existing(this.player);
 
 
@@ -86,6 +86,8 @@ export default class Game extends Scene
       200, 200,
       100, 50,
       {
+        restitution: 1,
+        friction: 0,
         isSensor: false,
         label: 'block',
         isStatic: true,

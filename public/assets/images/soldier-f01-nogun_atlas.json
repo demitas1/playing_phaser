@@ -1,0 +1,424 @@
+{
+    "frames": [
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_0",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 0,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_1",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 32,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_2",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 64,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_3",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 96,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_4",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 128,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_5",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 160,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_6",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 192,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_7",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 224,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_8",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 0,
+                "y": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_9",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 32,
+                "y": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_10",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 64,
+                "y": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_11",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 96,
+                "y": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_12",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 128,
+                "y": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_13",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 160,
+                "y": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_14",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 192,
+                "y": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_15",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 224,
+                "y": 32
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_16",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 0,
+                "y": 64
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_17",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 32,
+                "y": 64
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_18",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 64,
+                "y": 64
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_19",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 96,
+                "y": 64
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_20",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 128,
+                "y": 64
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_21",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 160,
+                "y": 64
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_22",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 192,
+                "y": 64
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_23",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 224,
+                "y": 64
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_24",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 0,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_25",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 32,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_26",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 64,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_27",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 96,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_28",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 128,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_29",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 160,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_30",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 192,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "practice_soldier-f01_no_gun-32x32_31",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 224,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}

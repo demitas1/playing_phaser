@@ -1,0 +1,324 @@
+{
+    "anims": [
+        {
+            "key": "run-left_up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_15"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_23"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_15"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_31"
+                }
+            ]
+        },
+        {
+            "key": "run-right_up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_14"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_22"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_14"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_30"
+                }
+            ]
+        },
+        {
+            "key": "run-right_down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_13"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_21"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_13"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_29"
+                }
+            ]
+        },
+        {
+            "key": "run-left_down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_12"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_20"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_12"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_28"
+                }
+            ]
+        },
+        {
+            "key": "idle-left_up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 2,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_7"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_15"
+                }
+            ]
+        },
+        {
+            "key": "idle-right_up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 2,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_6"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_14"
+                }
+            ]
+        },
+        {
+            "key": "idle-right_down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 2,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_5"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_13"
+                }
+            ]
+        },
+        {
+            "key": "idle-left_down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 2,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_4"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_12"
+                }
+            ]
+        },
+        {
+            "key": "run-up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_11"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_19"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_11"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_27"
+                }
+            ]
+        },
+        {
+            "key": "run-right",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_10"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_18"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_10"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_26"
+                }
+            ]
+        },
+        {
+            "key": "run-left",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_9"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_17"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_9"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_25"
+                }
+            ]
+        },
+        {
+            "key": "run-down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_8"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_16"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_8"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_24"
+                }
+            ]
+        },
+        {
+            "key": "idle-up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 2,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_3"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_11"
+                }
+            ]
+        },
+        {
+            "key": "idle-right",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 2,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_2"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_10"
+                }
+            ]
+        },
+        {
+            "key": "idle-left",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 2,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_1"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_9"
+                }
+            ]
+        },
+        {
+            "key": "idle-down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 2,
+            "frames": [
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_0"
+                },
+                {
+                    "key": "soldier-f01-nogun",
+                    "frame": "practice_soldier-f01_no_gun-32x32_8"
+                }
+            ]
+        }
+    ]
+}
